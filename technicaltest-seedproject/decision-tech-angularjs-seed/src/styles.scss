@@ -27,6 +27,7 @@ header>div {
 #menu {
     margin: 20px 0;
     float: right;
+    display: none
 }
 
 #logo {
@@ -44,7 +45,7 @@ header>div {
     background-color: #dedede;
     float: left;
     position: fixed;
-    padding: 10px
+    padding: 10px;
 }
 
 #bodyContainer {
@@ -78,4 +79,46 @@ th {
 ul {
     list-style: none;
     padding-left: 10px
+}
+
+.filterShow {
+    display: block !important
+}
+
+@media (max-width: 580px) {
+    #menu {
+        margin: 20px 30px 20px 0;
+        float: right;
+    }
+    table,
+    tr,
+    td,
+    #menu {
+        display: block
+    }
+    td {
+        border-bottom: 0;
+        padding: 0 0 5px
+    }
+    thead {
+        display: none
+    }
+    tbody tr {
+        border-bottom: 1px solid #dedede;
+        padding: 10px
+    }
+    .text-center {
+        text-align: left
+    }
+    #bodyContainer {
+        margin-left: 0;
+    }
+    #filterContainer {
+        display: none;
+        background-color: #333;
+        color: #FFF
+    }
+    .container {
+        min-width: 100%;
+    }
 }
