@@ -1,6 +1,5 @@
 <!doctype html>
 <html ng-app="app">
-<!--HOUR 2-->
 
 <head>
     <meta charset="utf-8">
@@ -8,7 +7,6 @@
     <base href="/">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/assets/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96">
@@ -101,6 +99,18 @@
             </table>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+
+            $('#menu').click(function() {
+
+                $('#filterContainer').toggleClass('filterShow');
+            })
+        })
+    </script>
 </body>
 
 </html>
